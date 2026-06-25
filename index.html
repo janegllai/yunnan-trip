@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yunnan 9-Day Itinerary</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #1f2328;
+    background: #ffffff;
+    padding: 32px 16px 48px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: #57606a; font-size: 13px; margin-bottom: 20px; }
+  .hint {
+    font-size: 12px; color: #57606a;
+    background: #f7f8fa; border: 1px solid #e5e7eb;
+    border-radius: 6px; padding: 10px 16px; margin-bottom: 20px;
+  }
+  .date-row {
+    display: flex; align-items: center; gap: 20px;
+    background: #f7f8fa; border: 1px solid #e5e7eb;
+    border-radius: 6px; padding: 14px 18px; margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .date-row label { font-weight: 600; font-size: 13px; }
+  .date-row input[type="date"] {
+    border: 1px solid #e5e7eb; border-radius: 4px;
+    padding: 5px 10px; font-size: 13px; color: #1f2328;
+    background: #fff; outline: none; font-family: inherit;
+  }
+  .date-row input[type="date"]:focus { border-color: #3b82d4; }
+  #endLabel { font-size: 13px; color: #57606a; }
+  #endLabel strong { color: #1f2328; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th {
+    background: #1f2328; color: #fff;
+    padding: 10px 12px; text-align: left;
+    font-weight: 600; border: 1px solid #1f2328;
+  }
+  td {
+    padding: 10px 12px; border: 1px solid #e5e7eb;
+    vertical-align: top; color: #1f2328;
+  }
+  tr:nth-child(odd) td  { background: #ffffff; }
+  tr:nth-child(even) td { background: #f7f8fa; }
+  .day-label { font-weight: 700; color: #3b82d4; white-space: nowrap; }
+  .date-cell { font-weight: 600; font-size: 12px; color: #1f2328; white-space: nowrap; }
+  .badge-purple {
+    display: inline-block; background: #7c5cd8; color: #fff;
+    border-radius: 4px; padding: 2px 8px; font-size: 11px;
+    font-weight: 600; white-space: nowrap; margin: 2px 2px 2px 0;
+  }
+  .badge-blue {
+    display: inline-block; background: #3b82d4; color: #fff;
+    border-radius: 4px; padding: 2px 8px; font-size: 11px;
+    font-weight: 600; white-space: nowrap; margin: 2px 2px 2px 0;
+  }
+  .note { font-size: 11px; color: #57606a; }
+  .sleep { font-weight: 600; }
+  ul { padding-left: 16px; margin: 0; }
+  li { margin-bottom: 3px; }
+  .footer {
+    margin-top: 40px; padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center; font-size: 12px; color: #57606a;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Yunnan 9-Day Travel Itinerary</h1>
+  <div class="subtitle">No temple visits &nbsp;·&nbsp; Kunming → Dali → Lijiang → Lugu Lake</div>
+
+  <div class="date-row">
+    <label for="startDate">Start Date (Day 1):</label>
+    <input type="date" id="startDate">
+    <span id="endLabel">End Date: <strong id="endVal">—</strong></span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:6%">Day</th>
+        <th style="width:13%">Date</th>
+        <th style="width:32%">Activities</th>
+        <th style="width:18%">Mode of Transport</th>
+        <th style="width:10%">Sleep</th>
+        <th style="width:21%">Special Activity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="day-label">Day 1</td>
+        <td class="date-cell" id="d1">—</td>
+        <td><ul>
+          <li>Arrive at Kunming Changshui Airport</li>
+          <li>Check in to hotel</li>
+          <li>Evening stroll at Green Lake Park (Cuihu Park)</li>
+          <li>Dinner: Crossing-the-bridge noodles (过桥米线)</li>
+        </ul></td>
+        <td><span class="badge-blue">✈ Flight</span><br><span class="note">Arrive Kunming</span></td>
+        <td class="sleep">Kunming</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 2</td>
+        <td class="date-cell" id="d2">—</td>
+        <td><ul>
+          <li>Morning: Stone Forest (Shilin) — UNESCO limestone formations</li>
+          <li>Afternoon: Dianchi Lake — lakeside walk &amp; birdwatching</li>
+          <li>Evening: Dounan Flower Market (斗南花市)</li>
+        </ul></td>
+        <td><span class="badge-blue">🚶 On Foot</span> <span class="badge-blue">🚗 Chartered Car</span><br><span class="note">Within Kunming</span></td>
+        <td class="sleep">Kunming</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 3</td>
+        <td class="date-cell" id="d3">—</td>
+        <td><ul>
+          <li>Morning: High-speed train Kunming → Dali (~2 hrs)</li>
+          <li>Afternoon: Dali Ancient Town — Bai architecture &amp; crafts</li>
+          <li>Evening: Foreigner Street (洋人街), dinner</li>
+        </ul></td>
+        <td><span class="badge-blue">🚄 High-Speed Train</span><br><span class="note">Kunming → Dali (~2 hrs)</span></td>
+        <td class="sleep">Dali</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 4</td>
+        <td class="date-cell" id="d4">—</td>
+        <td><ul>
+          <li>Morning: Erhai Lake — boat cruise or cycling</li>
+          <li>Afternoon: Xizhou Village — Bai-style courtyard homes</li>
+          <li>Evening: Go Karting at Yunxiangshan (云想山), then dinner</li>
+        </ul></td>
+        <td><span class="badge-blue">🚲 Bicycle / Boat</span><br><span class="note">Local transport in Dali</span></td>
+        <td class="sleep">Dali</td>
+        <td><span class="badge-purple">🏎 Go-Karting</span><br><span class="note">Yunxiangshan (云想山)</span></td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 5</td>
+        <td class="date-cell" id="d5">—</td>
+        <td><ul>
+          <li>Morning: Bus / train Dali → Lijiang (~2–3 hrs)</li>
+          <li>Afternoon: Lijiang Old Town (Dayan) — UNESCO World Heritage</li>
+          <li>Evening: Old town canals &amp; local shops</li>
+        </ul></td>
+        <td><span class="badge-blue">🚗 Chartered Car</span><br><span class="note">Dali → Lijiang (~2–3 hrs)</span></td>
+        <td class="sleep">Lijiang</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 6</td>
+        <td class="date-cell" id="d6">—</td>
+        <td><ul>
+          <li>Morning: Jade Dragon Snow Mountain — cable car to glacier</li>
+          <li>Afternoon: Horse riding through alpine meadows</li>
+          <li>Evening: Blue Moon Valley, then Naxi minority dinner</li>
+        </ul></td>
+        <td><span class="badge-blue">🚗 Chartered Car</span> <span class="badge-blue">🚡 Cable Car</span><br><span class="note">Lijiang → Jade Dragon Snow Mountain</span></td>
+        <td class="sleep">Lijiang</td>
+        <td><span class="badge-purple">🐴 Horse Riding</span><br><span class="note">Jade Dragon Snow Mountain</span></td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 7</td>
+        <td class="date-cell" id="d7">—</td>
+        <td><ul>
+          <li>Morning: Charter car Lijiang → Lugu Lake (~4–5 hrs)</li>
+          <li>Afternoon: Arrive at Lugu Lake — Mosuo village area</li>
+          <li>Evening: Sunset over the lake</li>
+        </ul></td>
+        <td><span class="badge-blue">🚗 Charter Car</span><br><span class="note">Lijiang → Lugu Lake (~4–5 hrs)</span></td>
+        <td class="sleep">Lugu Lake</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 8</td>
+        <td class="date-cell" id="d8">—</td>
+        <td><ul>
+          <li>Morning: Boat ride on Lugu Lake — Liwubi / Heiwawu Island</li>
+          <li>Afternoon: Luoshui Village — Mosuo matriarchal culture</li>
+          <li>Evening: Mosuo bonfire party &amp; traditional dance</li>
+        </ul></td>
+        <td><span class="badge-blue">🚗 Chartered Car</span> <span class="badge-blue">🚣 Boat</span><br><span class="note">Around Lugu Lake</span></td>
+        <td class="sleep">Lugu Lake</td>
+        <td><span class="badge-purple">🚣 Boat Riding</span><br><span class="note">Lugu Lake</span></td>
+      </tr>
+      <tr>
+        <td class="day-label">Day 9</td>
+        <td class="date-cell" id="d9">—</td>
+        <td><ul>
+          <li>Morning: Leisure time by Lugu Lake</li>
+          <li>Midday: Transfer to Lijiang / Lijiang Sanyi Airport</li>
+          <li>Evening: Fly home from Kunming or Lijiang</li>
+        </ul></td>
+        <td><span class="badge-blue">🚗 Charter Car</span> <span class="badge-blue">✈ Flight</span><br><span class="note">Lugu Lake → Lijiang → Home</span></td>
+        <td class="sleep">Departure</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="footer">Made with IBM Bob</div>
+</div>
+
+<script>
+  var WD = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var MO = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function fmt(d) {
+    return WD[d.getDay()] + ' ' + d.getDate() + ' ' + MO[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  document.getElementById('startDate').addEventListener('change', function () {
+    var p = this.value.split('-');
+    var base = new Date(+p[0], +p[1] - 1, +p[2]);
+    for (var i = 1; i <= 9; i++) {
+      var cur = new Date(base.getTime());
+      cur.setDate(base.getDate() + (i - 1));
+      document.getElementById('d' + i).textContent = fmt(cur);
+    }
+    var end = new Date(base.getTime());
+    end.setDate(base.getDate() + 8);
+    document.getElementById('endVal').textContent = fmt(end);
+  });
+</script>
+</body>
+</html>
